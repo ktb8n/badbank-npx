@@ -1,10 +1,12 @@
 import React from "react";
+import ReactRouterDOM from "react";
 const Route = ReactRouterDOM.Route;
 const Link = ReactRouterDOM.Link;
 const HashRouter = ReactRouterDOM.HashRouter;
 const UserContext = React.createContext(null);
 
-function Card(props) {
+
+function Context(props) {
 	function classes() {
 		const bg = props.bgcolor ? " bg-" + props.bgcolor : " ";
 		const txt = props.txtcolor ? " text-" + props.txtcolor : " text-white";

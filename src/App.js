@@ -1,4 +1,3 @@
-import logo from "/Users/ktb8n/Coding/Ktb8nCode/reactFinal/bad-bank-final/src/badPig.png";
 //import './App.css';
 import AllData from './Components/alldata';
 import CreateAccount from './Components/createaccount';
@@ -8,7 +7,10 @@ import Login from './Components/login';
 import NavBar from './Components/navbar';
 import Withdraw from './Components/withdraw';
 import Context from './Components/context';
-
+import React from "react";
+import HashRouter from "react";
+import UserContext from "react";
+import Route from "react";
 
 function App() {
 	return (
@@ -29,11 +31,11 @@ function App() {
 			>
 				<div className='container' style={{ padding: "20px" }}>
 					<Route path='/' exact component={Home} />
-					<Route path='/CreateAccount/' component={CreateAccount} />
-					<Route path='/login/' component={Login} />
-					<Route path='/deposit/' component={Deposit} />
-					<Route path='/withdraw/' component={Withdraw} />
-					<Route path='/alldata/' component={AllData} />
+					<Route path='/CreateAccount/' component="{CreateAccount} "/>
+					<Route path='/login/' component="{Login} "/>
+					<Route path='/deposit/' component="{Deposit}" />
+					<Route path='/withdraw/' component="{Withdraw}" />
+					<Route path='/alldata/' component="{AllData}" />
 				</div>
 			</UserContext.Provider>
 		</HashRouter>
