@@ -1,9 +1,9 @@
 import React from "react";
-import ReactRouterDOM from "react";
-const Route = ReactRouterDOM.Route;
-const Link = ReactRouterDOM.Link;
-const HashRouter = ReactRouterDOM.HashRouter;
+//import ReactRouterDOM from "react";
 const UserContext = React.createContext(null);
+
+
+
 
 
 function Context(props) {
@@ -25,4 +25,4 @@ function Context(props) {
 		</div>
 	);
 }
-export default Context;
+export default {Context, UserContext};

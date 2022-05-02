@@ -1,5 +1,7 @@
 import React from "react";
 import Context from "./context";
+import UserContext from "./context";
+import Card from "react-bootstrap/Card";
 
 function CreateAccount() {
 	const [show, setShow] = React.useState(true);
@@ -100,4 +102,4 @@ function CreateAccount() {
 	);
 }
 
-export default CreateAccount;
+export default {Card, CreateAccount};

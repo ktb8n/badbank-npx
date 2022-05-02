@@ -1,6 +1,7 @@
 //const [ToggleOn, setToggleOn] = useState(false);
 import React from "react";
 import ReactBootstrap from "react-bootstrap";
+import UserContext from './context';
 
 function AllData() {
 	const ctx = React.useContext(UserContext);
@@ -74,4 +75,4 @@ function AllData() {
 	);
 };
 
-export default AllData;
+export default {AllData};
